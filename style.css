@@ -1,0 +1,35 @@
+:root {}
+
+body {
+    font-family: 'Kumar One Outline', cursive;
+}
+
+#welcome-section {
+    height: 100vh;
+    text-align: center;
+    padding-top: 25%;
+}
+
+#navbar {
+    position: fixed;
+    top: 0;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    background-color: #FFF;
+}
+
+@media all and (max-width: 500px) {
+    #navbar {
+        display: none;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+#navbar a {
+    padding: 0px 20px;
+}
