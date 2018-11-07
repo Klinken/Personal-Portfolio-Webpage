@@ -19,6 +19,14 @@ body {
     background-color: #FFF;
 }
 
+#navbar a {
+    padding: 0px 20px;
+}
+
+#navbar a:hover{
+    border-bottom: 1px solid #000;
+}
+
 @media all and (max-width: 500px) {
     #navbar {
         display: none;
@@ -30,6 +38,3 @@ a {
     color: #000000;
 }
 
-#navbar a {
-    padding: 0px 20px;
-}
