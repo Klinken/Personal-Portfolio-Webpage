@@ -1,7 +1,24 @@
-:root {}
+:root {
+    --main-color: #fff;
+}
 
-body {
+a {
     font-family: 'Kumar One Outline', cursive;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Kumar One Outline', cursive;
+}
+
+p{
+    font-family: 'Gurajada', serif;
+    font-size: 20px;
+    line-height: 1;
 }
 
 #welcome-section {
@@ -9,20 +26,55 @@ body {
     text-align: center;
 }
 
+#welcome-section h1 {
+    padding-top: 40vh;
+}
+
+/* FadeIn animation for welcome */
+
+#welcome-section {
+    -webkit-animation-name: welcome;
+    /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 8s;
+    /* Safari 4.0 - 8.0 */
+    animation-name: welcome;
+    animation-duration: 8s;
+}
+
+@-webkit-keyframes welcome {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes welcome {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
 #navbar {
     position: fixed;
+    padding-top: 10px;
     top: 0;
-    padding: 10px;
     text-align: center;
     width: 100%;
-    background-color: #FFF;
+    background-color: var(--main-color);
 }
 
 #navbar a {
-    padding: 0px 20px;
+    margin: 0px 20px 0px 0px;
 }
 
-#navbar a:hover{
+#navbar a:hover {
     border-bottom: 1px solid #000;
 }
 
@@ -38,15 +90,16 @@ a {
 }
 
 
-#projects {
+.project-tile {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 100%;
+    width: 1000px;
+    margin: 0 auto;
 }
 
 .project-title {
-    width: 40%;
+    width: 50%;
+    padding: 20px;
+    text-align: justify;
 }
-
-
