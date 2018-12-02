@@ -2,24 +2,46 @@
     --main-color: #fff;
 }
 
+/* Elements */
+
 a {
-    font-family: 'Kumar One Outline', cursive;
+    font-family: 'Gurajada', serif;
+    text-decoration: none;
+    color: #000000;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-family: 'Kumar One Outline', cursive;
+a:hover {
+    color: #6a6a6a;
 }
 
-p{
+p {
     font-family: 'Gurajada', serif;
     font-size: 20px;
     line-height: 1;
 }
+
+/* Navigation */
+
+#navbar {
+    position: fixed;
+    padding-top: 2px;
+    top: 0;
+    text-align: center;
+    width: 100%;
+    background-color: var(--main-color);
+    z-index: 100;
+}
+
+#navbar a {
+    margin: 0px 20px 0px 20px;
+    font-size: 25px;
+}
+
+#navbar a:hover {
+    border-top: 3px solid #000;
+}
+
+/* Welcome section */
 
 #welcome-section {
     height: 100vh;
@@ -28,9 +50,10 @@ p{
 
 #welcome-section h1 {
     padding-top: 40vh;
+    font-family: 'Kumar One Outline', cursive;
 }
 
-/* FadeIn animation for welcome */
+/* FadeIn animation for welcome section */
 
 #welcome-section {
     -webkit-animation-name: welcome;
@@ -61,46 +84,32 @@ p{
     }
 }
 
-#navbar {
-    position: fixed;
-    padding-top: 10px;
-    top: 0;
-    text-align: center;
-    width: 100%;
-    background-color: var(--main-color);
-}
 
-#navbar a {
-    margin: 0px 20px 0px 0px;
-}
+/* Projects */
 
-#navbar a:hover {
-    border-bottom: 1px solid #000;
-}
 
-@media all and (max-width: 500px) {
-    #navbar {
-        display: none;
+@media all and (min-width: 700px) {
+    #projects {
+        height: 80vh;
+        padding-top: 35vh;
+    }
+
+    .project-tile {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        width: 1000px;
+        margin: 0 auto;
+    }
+
+    .project-title {
+        width: 50%;
+        padding: 20px;
+        text-align: justify;
     }
 }
 
-a {
-    text-decoration: none;
-    color: #000000;
-}
-
-@media all and (min-width: 700px){
-.project-tile {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    width: 1000px;
-    margin: 0 auto;
-}
-
-.project-title {
-    width: 50%;
-    padding: 20px;
-    text-align: justify;
-}
+.project-title h3 {
+    line-height: 0;
+    font-size: 25px;
 }
